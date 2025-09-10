@@ -9,20 +9,17 @@
 
 int main(){
 
-    char str1[255];
-    char str2[255];
-    printf("donne la 1er chain de charactere : ");
+    char str1[20];
+    printf("donnez la chain de charactere : ");
     fgets(str1 , 255 , stdin);
     str1[strlen(str1) - 1] = '\0' ;
 
-    printf("donne la 2eme chain de charactere : ");
-    fgets(str2 , 255 , stdin);
-    str2[strlen(str2) - 1] = '\0' ;
+    // for(int i = 0 ; i < strlen(str1) ; i++){
+    //         printf("%c" , str1[strlen(str1) - 1 - i] );
+    // }
 
-    if(strcmp(str1 , str2)){
-        printf("les deux chain ne sonne pas egau" );
-    }else{
-        printf("les deux chain sonne egau" );
+    for(int i = strlen(str1) - 1 ; i >= 0 ; i--){
+            printf("%c" , str1[i] );
     }
 
 
