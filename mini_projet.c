@@ -37,7 +37,15 @@ void add_contact(struct contact list_contact[] , int contact_counter){
 
 }
 
-void edit_contact(){}
+void edit_contact(){
+    
+    int contact_name[255] ;
+    getchar() ;
+    printf("donne le nom de contact : ") ;
+    fgets( contact_name , 255 , stdin );
+
+    
+}
 
 void delete_contact(){}
 
